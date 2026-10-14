@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lecture Follow는 칠판 강의를 로컬 PC에서 자동 편집하고, 사용자가 선택한 YouTube 재생목록에 완성 영상을 업로드하는 Windows 프로그램입니다.">
+  <title>Lecture Follow — 칠판 강의 자동 편집</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 이동</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Lecture Follow 홈"><span class="brand-mark" aria-hidden="true"></span>Lecture Follow</a>
+      <nav class="top-nav" aria-label="주 메뉴">
+        <a href="index.html" aria-current="page">프로그램 안내</a>
+        <a href="privacy.html">개인정보처리방침</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="shell">
+    <section class="hero" aria-labelledby="intro-title">
+      <div>
+        <p class="eyebrow">WINDOWS · LOCAL VIDEO EDITING</p>
+        <h1 id="intro-title">칠판 강의를 위한<br>자동 편집 프로그램</h1>
+        <p class="lead">Lecture Follow는 고정 카메라로 촬영한 강의에서 선생님의 움직임을 따라 화면을 잡습니다. 여러 촬영 파일을 순서대로 이어 붙이고, 완성 영상을 원하는 YouTube 재생목록에 올릴 수 있습니다.</p>
+        <a class="button" href="privacy.html">개인정보처리방침 읽기</a>
+        <p class="hero-note">이 페이지는 프로그램의 기능과 데이터 처리를 설명하는 공개 안내입니다.</p>
+      </div>
+      <figure class="frame-demo">
+        <span class="demo-label">화면 구성 예시</span>
+        <div class="blackboard" role="img" aria-label="왼쪽 판서와 오른쪽 선생님을 함께 담는 크롭 화면의 개념도">
+          <span class="chalk">f(x) = x² + 2x<br>= (x + 1)² − 1</span>
+          <span class="chalk-short" aria-hidden="true"></span>
+          <span class="person" aria-hidden="true"></span>
+          <span class="crop-guide" aria-hidden="true"></span>
+        </div>
+        <figcaption>위 그림은 기능을 설명하는 개념도이며, 실제 영상이나 편집 결과는 아닙니다.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" aria-labelledby="flow-title">
+      <h2 id="flow-title">촬영 파일에서 완성 영상까지</h2>
+      <p class="section-intro">영상 편집은 Windows 프로그램에서 진행합니다. 홈페이지에 영상을 올리거나 로그인할 필요가 없습니다.</p>
+      <ol class="steps">
+        <li><h3>영상 불러오기</h3><p>하나 이상의 촬영 파일을 선택하고 순서를 정합니다. 촬영을 중간에 끊어 여러 파일이 생겼어도 한 영상으로 합칠 수 있습니다.</p></li>
+        <li><h3>화면 설정과 편집</h3><p>칠판 영역과 추적 구도를 설정한 뒤 편집합니다. 촬영 도중 구도가 달라졌다면 해당 파일의 영역과 기울기를 조절할 수 있습니다. 원본 분석과 편집은 PC에서 처리합니다.</p></li>
+        <li><h3>저장 또는 자동 업로드</h3><p>완성 MP4를 저장합니다. YouTube 자동 업로드를 켜고 재생목록을 선택했다면 전체 편집이 성공한 뒤 업로드까지 이어집니다.</p></li>
+      </ol>
+    </section>
+
+    <section class="section split" aria-labelledby="youtube-title">
+      <div>
+        <h2 id="youtube-title">내 채널의 재생목록 선택</h2>
+        <p>YouTube 계정을 연결하면 채널과 재생목록을 확인하고, 이번 강의를 올릴 목록을 프로그램에서 선택할 수 있습니다.</p>
+        <ul class="plain-list">
+          <li>기본 공개 범위는 <strong>일부공개</strong>입니다. 링크를 받은 사람이 볼 수 있습니다.</li>
+          <li>영상 제목, 설명, 공개 범위와 아동용 여부는 업로드 전에 사용자가 정합니다.</li>
+          <li>미리보기 영상과 취소되거나 실패한 편집 결과는 자동 업로드하지 않습니다.</li>
+        </ul>
+      </div>
+      <div class="connection-note">
+        <h3>Google 연결은 Windows 앱에서</h3>
+        <p>프로그램의 계정 연결 기능을 누르면 Google 로그인 및 권한 승인 화면이 브라우저에 열립니다. 원하는 YouTube 채널을 선택하고 직접 승인합니다.</p>
+        <p>Lecture Follow는 사용자의 Google 비밀번호를 입력받지 않습니다. 연결 정보의 저장 방법과 연결 해제 절차는 <a href="privacy.html">개인정보처리방침</a>에서 확인할 수 있습니다.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="privacy-title">
+      <h2 id="privacy-title">편집은 로컬에서, 업로드는 선택에 따라</h2>
+      <p class="section-intro">원본 영상의 분석과 편집은 사용자의 PC에서 이루어집니다. 자동 업로드를 선택하면 완성 영상과 사용자가 지정한 업로드 정보가 YouTube로 전송됩니다. 개발자가 운영하는 별도 서버로 영상이나 Google 연결 정보를 보내지 않습니다.</p>
+      <p><a href="privacy.html">개인정보처리방침 읽기</a></p>
+      <p>프로그램 문의는 Google 계정 연결 승인 화면에 표시되는 사용자 지원 이메일로 전달할 수 있습니다.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-inner"><span>Lecture Follow · Windows 강의 자동 편집</span><span>안내 갱신: 2026-10-14 · <a href="privacy.html">개인정보처리방침</a></span></div>
+  </footer>
+</body>
+</html>
