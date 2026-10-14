@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lecture Follow의 로컬 영상 처리, Google·YouTube 데이터 사용, 저장 및 삭제 방법을 안내합니다.">
+  <title>개인정보처리방침 — Lecture Follow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 이동</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Lecture Follow 홈"><span class="brand-mark" aria-hidden="true"></span>Lecture Follow</a>
+      <nav class="top-nav" aria-label="주 메뉴">
+        <a href="index.html">프로그램 안내</a>
+        <a href="privacy.html" aria-current="page">개인정보처리방침</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="shell policy">
+    <p class="eyebrow">LECTURE FOLLOW</p>
+    <h1>개인정보처리방침</h1>
+    <p class="policy-meta">시행 및 최종 수정일: 2026-10-14</p>
+    <p class="policy-intro">이 방침은 Lecture Follow Windows 프로그램과 이 공개 안내 사이트에서 다루는 정보를 설명합니다. 프로그램은 원본 영상을 사용자의 PC에서 분석·편집하며, 사용자가 선택한 경우에만 YouTube 계정 연결과 완성 영상 업로드 기능을 사용합니다.</p>
+    <nav class="policy-nav" aria-label="개인정보처리방침 목차">
+      <a href="#data">처리하는 정보</a><a href="#use">이용과 전송</a><a href="#storage">로컬 저장</a><a href="#deletion">연결 해제와 삭제</a><a href="#google">Google 데이터 정책</a><a href="#contact">문의</a>
+    </nav>
+
+    <section id="data" aria-labelledby="data-title">
+      <h2 id="data-title">1. 처리하는 정보와 목적</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">정보</th><th scope="col">이용 목적</th></tr></thead>
+          <tbody>
+            <tr><td>사용자가 선택한 영상과 음성, 파일 경로, 칠판·선생님 영역 및 추적 분석 정보</td><td>PC에서 영상 분석, 화면 추적, 크롭, 파일 합치기와 완성 영상 저장을 수행합니다. 원본 파일을 YouTube에 자동 전송하지 않습니다.</td></tr>
+            <tr><td>YouTube 채널 ID·이름, 재생목록 ID·이름·공개 범위, 업로드한 영상의 ID·소속 채널·실제 공개 범위와 재생목록 포함 여부</td><td>Google의 YouTube Data API로 연결한 채널과 업로드할 재생목록을 확인하고, 업로드 후 실제 공개 범위 및 선택한 재생목록에 추가되었는지를 검사합니다.</td></tr>
+            <tr><td>Google OAuth 클라이언트 설정과 액세스·갱신 토큰</td><td>사용자가 승인한 범위에서 YouTube API를 호출하고 연결을 갱신합니다. Google 비밀번호는 프로그램에서 입력받지 않습니다.</td></tr>
+            <tr><td>완성 MP4, 제목, 설명, 공개 범위, 아동용 여부, 선택한 재생목록과 구독자 알림 설정</td><td>사용자가 자동 업로드를 켠 경우, 완성 영상을 YouTube에 업로드하고 선택한 재생목록에 추가합니다.</td></tr>
+            <tr><td>완성 파일의 식별값·크기, 업로드 진행량, 전송 세션, 영상 ID와 완료 기록</td><td>업로드 이어하기, 진행 상태 표시, 결과 확인 및 같은 영상의 중복 업로드 방지에 사용합니다.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="use" aria-labelledby="use-title">
+      <h2 id="use-title">2. 이용과 외부 전송</h2>
+      <p>원본 영상의 분석과 편집은 사용자의 PC에서 처리합니다. 개발자가 운영하는 별도 서버로 원본 영상, 편집 결과 또는 Google 연결 정보를 전송하지 않습니다. 이 정보를 광고에 사용하거나 판매하지 않습니다.</p>
+      <p>Google 계정을 연결하면 Google 인증 서버 및 YouTube API와 통신합니다. Google 승인 화면에는 YouTube 계정 관리 권한이 표시될 수 있습니다. 프로그램은 이 권한을 채널·재생목록 조회, 완성 영상 업로드, 재생목록 추가 및 업로드 결과 확인에 사용합니다. 댓글·시청기록·구독목록 조회나 영상 삭제는 수행하지 않습니다.</p>
+      <p>자동 업로드는 사용자가 기능을 켜고 대상 재생목록과 업로드 정보를 정한 뒤, 전체 편집이 성공했을 때 실행합니다. 기본 공개 범위는 일부공개입니다. 미리보기 영상, 취소된 편집 및 실패한 편집 결과는 자동 업로드하지 않습니다.</p>
+      <p>전송을 시작한 뒤 취소하거나 연결을 해제하더라도 이미 YouTube에 전송·생성된 영상이 자동 삭제되는 것은 아닙니다. 공개 범위 변경과 영상 삭제는 YouTube Studio에서 별도로 진행할 수 있습니다.</p>
+      <p>이 안내 사이트에는 로그인, 분석 도구, 광고, 추적 스크립트 또는 자체 입력 양식이 없습니다. 외부 링크를 방문하거나 Google·YouTube 서비스를 사용하면 해당 서비스의 정책이 적용됩니다.</p>
+    </section>
+
+    <section id="storage" aria-labelledby="storage-title">
+      <h2 id="storage-title">3. PC의 저장 위치와 보관</h2>
+      <p>YouTube 연결 관련 데이터는 해당 Windows 사용자의 <code>%LOCALAPPDATA%\LectureFollow\youtube</code> 폴더에 저장됩니다.</p>
+      <ul class="plain-list">
+        <li><strong>암호화 저장:</strong> OAuth 클라이언트 설정, 인증 토큰, 채널·재생목록 캐시와 업로드 기록은 해당 Windows 사용자에 종속된 Windows DPAPI로 암호화합니다.</li>
+        <li><strong>일반 JSON 저장:</strong> <code>upload_preferences.json</code>에는 업로드 제목·설명·공개 범위·대상 채널 및 재생목록 등의 설정이 저장됩니다. 사용자가 저장하는 <code>*.lecture.json</code> 작업 파일과 추적 분석 캐시도 일반 JSON이며, 영상 경로와 편집 설정 등이 포함될 수 있습니다.</li>
+        <li><strong>영상 저장:</strong> 원본 영상과 완성 영상은 사용자가 선택한 폴더에 있습니다. Google Cloud에서 내려받아 직접 가져온 원래 OAuth JSON 파일도 사용자가 보관한 위치에 그대로 남습니다.</li>
+      </ul>
+      <p>연결과 업로드 기록은 다음 실행의 연결 갱신 및 중복 방지에 사용되며, 사용자가 삭제할 때까지 로컬에 보관될 수 있습니다. 작업·캐시·영상 파일에도 자동 삭제 기간을 적용하지 않습니다. 일반 JSON과 영상 파일의 보호는 Windows 계정 및 해당 저장 폴더의 접근 권한에 따릅니다.</p>
+    </section>
+
+    <section id="deletion" aria-labelledby="deletion-title">
+      <h2 id="deletion-title">4. 연결 해제와 데이터 삭제</h2>
+      <ul class="plain-list">
+        <li><strong>이 PC의 연결 해제:</strong> 프로그램의 ‘연결 해제’를 누르면 로컬 인증 토큰을 삭제합니다. 나머지 설정, 암호화된 캐시·업로드 기록, 원본·완성 영상 및 작업 파일을 모두 삭제하는 기능은 아닙니다.</li>
+        <li><strong>Google의 접근 권한 철회:</strong> <a href="https://myaccount.google.com/connections">Google 계정의 서드 파티 연결 관리</a>에서 Lecture Follow의 연결을 제거할 수 있습니다. PC의 연결 해제와 Google 측 권한 철회는 별도 작업입니다.</li>
+        <li><strong>YouTube 관련 로컬 데이터 모두 삭제:</strong> 프로그램을 종료하고 <code>%LOCALAPPDATA%\LectureFollow\youtube</code> 폴더를 직접 삭제하면 그 폴더에 저장된 클라이언트 설정, 토큰, 캐시, 업로드 기록과 업로드 설정이 제거됩니다. 다시 사용하려면 연결 설정이 필요합니다.</li>
+        <li><strong>영상·작업·분석 파일 삭제:</strong> 원본 영상, 완성 영상, <code>*.lecture.json</code> 작업 파일과 추적 분석 캐시는 저장한 각 폴더에서 직접 삭제합니다. 위 YouTube 데이터 폴더 삭제만으로 이 파일들이 함께 삭제되지 않습니다.</li>
+        <li><strong>이미 업로드한 영상 삭제:</strong> <a href="https://studio.youtube.com/">YouTube Studio</a>에서 직접 삭제합니다. PC의 파일 삭제나 연결 해제는 YouTube의 영상을 삭제하지 않습니다.</li>
+      </ul>
+      <p>데이터를 삭제하기 전에는 필요한 영상과 작업 파일을 보관해 주세요. 업로드 기록을 삭제하면 프로그램의 기존 업로드 이어하기와 중복 방지 기록도 없어집니다.</p>
+    </section>
+
+    <section id="google" aria-labelledby="google-title">
+      <h2 id="google-title">5. Google API 데이터 정책</h2>
+      <div class="limited-use">
+        <p lang="en">Lecture Follow's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+        <p>Lecture Follow는 Google API에서 받은 정보의 이용 및 전송에 대해 Google API Services User Data Policy와 Limited Use 요구사항을 준수합니다. 정보는 이 방침에 설명한 사용자의 기능을 제공하기 위해 사용합니다.</p>
+      </div>
+      <p style="margin-top: 20px">Google 및 YouTube가 인증과 업로드 과정에서 직접 처리하는 데이터는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>과 해당 서비스 정책에 따릅니다.</p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">6. 문의와 방침 변경</h2>
+      <p>프로그램 및 이 방침에 관한 문의는 Google 계정 연결 승인 화면에 표시되는 사용자 지원 이메일로 전달할 수 있습니다.</p>
+      <p>프로그램의 데이터 처리 방식이 바뀌면 이 공개 페이지의 내용을 수정하고 상단의 최종 수정일을 갱신합니다.</p>
+      <p><a href="index.html">프로그램 안내로 돌아가기</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-inner"><span>Lecture Follow · Windows 강의 자동 편집</span><span>개인정보처리방침 · 2026-10-14</span></div>
+  </footer>
+</body>
+</html>
